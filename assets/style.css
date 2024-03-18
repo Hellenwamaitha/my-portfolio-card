@@ -87,9 +87,19 @@ body{
     overflow: hidden;
     transition: .2s linear !important;
 }
+body .active{
+    padding-left: 35rem;
+}
+section{
+    padding: 3rem 2rem;
+    margin: 0rem;
+    max-width: 1200px;
+    text-align: center;
+
+}
 .header{
     position: fixed;
-    top: 0; left: 0;
+    top: 0; left: -35rem;
     height: 100vh;
     background-color: var(--white);
     border-right: var(--border-bold, 4px solid black);
@@ -163,4 +173,37 @@ body{
     color: var(--white);
 
 }
+.header .active{
+   left: 0; 
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    body .active{
+        left: 0rem;
+    }
+}
 
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .header.active{
+        padding-top: 7rem;
+    }
+    #menu-btn.fa-times{
+        right: 0;
+    }
+}
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.home .image img{
+    height: 65rem;
+    padding: 2rem;
+    border: var(--border-bold);
+}
