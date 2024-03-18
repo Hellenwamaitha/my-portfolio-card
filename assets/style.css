@@ -118,7 +118,49 @@ body{
 .header .navbar a{
     display: block;
     font-size: 2.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 5rem;
-    
+    color: black;
+
 }
+
+    .header .navbar a.active,
+    .header .navbar a:hover {
+        background-color: yellow !important; 
+    }
+
+   
+.header .follow {
+    display: flex; /* Ensure the icons are displayed in a row */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    margin-bottom: 0px; /* Add some space from the top */
+}
+
+.header .follow a {
+    padding: 20px;  
+    text-align: center;  
+    margin: 45px 2px;  
+    font-size: 30px;  
+    width: 50px;  
+    color: black;
+
+}
+
+.header .follow a:hover {
+    transform: rotate(360deg);
+}
+
+#menu-btn{
+    position: absolute;
+    top: 0; right: -5.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--white);
+
+}
+
